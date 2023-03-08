@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/fbscreening" method="post" >
+
+        Please think about the appointments you, your child and/or your family have had at Mpower Cell.
+        For each item, please tick the box that best describes what you think or feel about the service.
+        (1 being the lowest & 5 being the highest)<br>
+        1 – Not satisfied at all, 2 – Slightly satisfied, 3 – Neutral, 4 – Very satisfied, 5 – Highly
+        satisfied
+
+
+        <br>
+        <div class="d-flex justify-content-center">
+            <div class="container  mt-3 ">
+
+
+                    <div class="d-flex justify-content-center">
+                        <div class="col-sm-2 my-1">
+                            <label for="name">Name & Rank</label>
+                            <input type="text" name="name" class="form-control" id="name" required>
+                        </div>
+                        <div class="col-sm-2 my-1">
+                            <label for="email">Organisation</label>
+                            <input type="text" name="org" class="form-control" id="org" required>
+                        </div>
+                        <div class="col-sm-2 my-1">
+                            <label for="name">Location</label>
+                            <input type="text" name="loc" class="form-control" id="loc" required>
+                        </div>
+                        <div class="col-sm-2 my-1">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-sm-2 my-1">
+                            <label for="name">Phone No.</label>
+                            <input type="text" name="ph" class="form-control" id="ph" required>
+                        </div>
+                 
+                        <div class="col-sm-2 my-1">
+                            <label for="name">Name of Therapist </label>
+                            <select class="custom-select" name="therapist" id="therapist" required>
+                                <option selected>Choose...</option>
+                                <option >Shridhar Kulkarni</option>
+                                <option >Vidula Sawant</option>
+                                <option >Kavya Singh </option>
+                              </select>
+                        </div>
+                 
+                    </div>
+                    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+                    <script>
+                        $(function () {
+                            $('.1').click(function (e) {
+                                $('.1').not(this).prop('checked', false);
+                            });
+                            $('.2').click(function (e) {
+                                $('.2').not(this).prop('checked', false);
+                            });
+                            $('.3').click(function (e) {
+                                $('.3').not(this).prop('checked', false);
+                            });
+                            $('.4').click(function (e) {
+                                $('.4').not(this).prop('checked', false);
+                            });
+                            $('.5').click(function (e) {
+                                $('.5').not(this).prop('checked', false);
+                            });
+                            $('.6').click(function (e) {
+                                $('.6').not(this).prop('checked', false);
+                            });
+                            $('.7').click(function (e) {
+                                $('.7').not(this).prop('checked', false);
+                            });
+                        });
+                    </script>
+                    <div class="d-flex justify-content-center">
+                        <h5>1. The process of this service has been explained in sufficient depth & all my questions
+                            were answered.</h5>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="col-sm-1 my-1">
+                            <h2>1</h2> <input name="qus1" id="qus1" type="checkbox" value="1" class="1">
+                        </div>
+                        <div class="col-sm-1 my-1">
+                            <h2>2</h2> <input name="qus1" id="qus1" type="checkbox" value="2" class="1">
+                        </div>
+                        <div class="col-sm-1 my-1">
+                            <h2>3</h2> <input name="qus1" id="qus1" type="checkbox" value="3" class="1">
+                        </div>
+                        <div class="col-sm-1 my-1">
+                            <h2>4</h2> <input name="qus1" id="qus1" type="checkbox" value="4" class="1">
+                        </div>
+                        <div class="col-sm-1 my-1">
+                            <h2>5</h2> <input name="qus1" id="qus1" type="checkbox" value="5" class="1">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h5>2. I feel that the professionals who have seen me/my child listened to me.
+                          </h5>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="col-sm-1 my-1">
+                            <h2>1</h2> <input name="qus2" id="qus2" type="checkbox" value="1" class="2">
+                        </div>
+                        <div class="col-sm-1 my-1">
+                            <h2>2</h2> <input name="qus2" id="qus2" type="checkbox" value="2" class="2">
+                        </div>
+                        <div class="col-sm-1 my-1">
+                            <h2>3</h2> <input name="qus2" id="qus2" type="checkbox" value="3" class="2">
+                        </div>
+                        <div class="col-sm-1 my-1">
+                            <h2>4</h2> <input name="qus2" id="qus2" type="checkbox" value="4" class="2">
+                        </div>
+                        <div class="col-sm-1 my-1">
+                            <h2>5</h2> <input name="qus2" id="qus2" type="checkbox" value="5" class="2">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h5>3. It was easy to talk to the professionals who have seen me/my child.</h5>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="col-sm-1 my-1">
+                            <h2>1</h2> <input name="qus3" id="qus3" type="checkbox" value="1" class="3">
+                        </div>
+                        <div class="col-sm-1 my-1">
+                            <h2>2</h2> <input name="qus3" id="qus3" type="checkbox" value="2" class="3">
+                        </div>
+                        <div class="col-sm-1 my-1">
+                            <h2>3</h2> <input name="qus3" id="qus3" type="checkbox" value="3" class="3">
+                        </div>
+                        <div class="col-sm-1 my-1">
+                            <h2>4</h2> <input name="qus3" id="qus3" type="checkbox" value="4" class="3">
+                        </div>
+                        <div class="col-sm-1 my-1">
+                            <h2>5</h2> <input name="qus3" id="qus3" type="checkbox" value="5" class="3">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <h5>4. I am happy with the services at the Cell.</h5>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="col-sm-1 my-1">
+                            <h2>1</h2> <input name="qus4" id="qus4" type="checkbox" value="1" class="7">
+                        </div>
+                        <div class="col-sm-1 my-1">
+                            <h2>2</h2> <input name="qus4" id="qus4" type="checkbox" value="2" class="7">
+                        </div>
+                        <div class="col-sm-1 my-1">
+                            <h2>3</h2> <input name="qus4" id="qus4" type="checkbox" value="3" class="7">
+                        </div>
+                        <div class="col-sm-1 my-1">
+                            <h2>4</h2> <input name="qus4" id="qus4" type="checkbox" value="4" class="7">
+                        </div>
+                        <div class="col-sm-1 my-1">
+                            <h2>5</h2> <input name="qus4" id="qus4" type="checkbox" value="5" class="7">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h5>5. Would you recommend Mpower's services to any other organisation?</h5>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="col-sm-4 my-1">
+                            <select class="custom-select" name="qus5" id="qus5" required>
+                                <option selected>Choose...</option>
+                                <option >YES</option>
+                                <option >NO</option>
+                                
+                              </select>
+                       </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h5>6. Any other comments/anecdotes you would like to share?</h5>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="col-sm-7 my-1">
+                            <input type="text" name="qus6" class="form-control" id="qus6" maxlength="250" required>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+
+            </div>
+
+ 
+        </div>
+    </form>
+</body>
+
+</html>
